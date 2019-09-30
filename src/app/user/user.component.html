@@ -37,18 +37,17 @@
       <div class="container allrepos">
         <div class="card"  *ngFor="let repos of repo" style="width: 22rem;" class="repo">
           <div class="card-body" >
-            <h5 class="card-title"><span class="top">Repo Name:{{repos.name}}</span></h5>
+            <h5 class="card-title"><span class="top">Repo Name:</span> &nbsp;{{repos.name}} </h5>
             <div class="card-text">
               <hr>
-              <div class="desc"><span class="top">Description:{{repos.description}}</span>
+              <div class="desc"><span class="top">Description:</span> &nbsp;{{repos.description}}
               </div>
               <hr>
               <div class="card-subtitle mb-2">
-                  <span class="top">Language:{{repos.language}} </span>
+                  <span class="top">Language: </span> {{repos.language}}
               </div>
-              <div class="card-subtitle mb-2">
-                <span class="top">Created on :{{repos.created_at | date }} </span>
-            </div>
+              <div class="card-subtitle mb-2"><span class="top">Created:&nbsp; <span id="created">{{repos.created_at | date}}</span> &nbsp;  On:</span> &nbsp;{{repos.created_at | date}}
+              </div>
             </div>
             </div>
         </div>
