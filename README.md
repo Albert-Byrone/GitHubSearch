@@ -1,15 +1,16 @@
 
-# Quote
+# GitHub Search
 ## By Albert Byrone
 
 ## Description
 This is a simple Angular  application that allow users to search their github details using their names.
 
 ## Live Page 
+https://albert-byrone.github.io/GitHubSearch/user-prof
 
-## User
 
-# Project1
+
+# Project
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
 ## Development server
@@ -49,8 +50,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 * [HTML5](https://github.com/topics/html5)
 * [CSS](https://github.com/topics/css3)
-* [AngulerCLI]
+* AngulerCLI
 * markdown
+* Typescript
 * [Bootstrap](https://github.com/topics/bootstrap)
 
 ## Contact Information 
