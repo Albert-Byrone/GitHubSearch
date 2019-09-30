@@ -37,5 +37,30 @@ export class UserService {
       });
     });
   }
+
+  getRepos(searchName) {
+
+    interface Repos {
+      name: string;
+      html_url: string;
+      description: string;
+      forks: number;
+      atcherCounted: number;
+      language: string;
+      created_at: Date;
+    }
+    return new Promise((resolve, reject) => {
+      this.http.get<Repo>('https://api.github.com/users/' + searchName + '/repos?order=created&sort=asc?access_token=' + environment.apiKey)
+      .toPromise().then(
+        (results) => {
+          this.getRepo = results;
+          resolve();
+        },
+        (error) => {
+          console.log(error);
+          reject();
+        }
+      );
+    });
   }
 }
