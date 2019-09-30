@@ -8,11 +8,11 @@ import { NotfoundComponent } from './notfound/notfound.component';
 const routes: Routes = [
   {path: 'user-prof', component: UserComponent},
   {path: 'search-repo', component: RepoComponent},
-  {path: '', redirectTo: '/user-prof',pathMatch: 'full'},
+  {path: '', redirectTo: '/user-prof', pathMatch: 'full'},
   {path: '**', component: NotfoundComponent},
 
 
-const routes: Routes = [];
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
