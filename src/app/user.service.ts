@@ -1,14 +1,22 @@
 import { Injectable } from '@angular/core';
+import { User } from './user';
+import { Repo } from './repo';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
+  getUser: User;
+  getRepo: Repo;
+
   constructor(private http: HttpClient) {
     this.getUser = new User('', '', '', '', 0, 0, 0, '', new Date());
     this.getRepo =  new Repo('', '', '', new Date(),'');
 
+  }
 
   searchUser(searchName: string) {
 
