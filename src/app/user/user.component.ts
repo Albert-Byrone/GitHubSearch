@@ -36,7 +36,7 @@ searchs(searchName) {
 
 }
 ngOnInit() {
-this.searchs('bryomajor');
+this.searchs('Albert-Byrone');
   }
 
 }
