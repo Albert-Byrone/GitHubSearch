@@ -13,4 +13,8 @@ export class FormComponent implements OnInit {
   ngOnInit() {
   }
 
+  search(){
+    this.searchOutput.emit(this.searchName);
+    this.searchName = '';
+  }
 }
